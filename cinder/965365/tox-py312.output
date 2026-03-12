@@ -1,0 +1,336 @@
+.pkg: _optional_hooks> python /opt/stack/cinder/.tox/.tox/lib/python3.12/site-packages/pyproject_api/_backend.py True pbr.build
+.pkg: get_requires_for_build_editable> python /opt/stack/cinder/.tox/.tox/lib/python3.12/site-packages/pyproject_api/_backend.py True pbr.build
+.pkg: build_editable> python /opt/stack/cinder/.tox/.tox/lib/python3.12/site-packages/pyproject_api/_backend.py True pbr.build
+py312: install_package> python -m pip install -chttps://releases.openstack.org/constraints/upper/master --force-reinstall --no-deps /opt/stack/cinder/.tox/.tmp/package/22/cinder-27.1.0.dev29-0.editable-py3-none-any.whl
+py312: commands[0]> stestr run --random cinder.tests.unit.volume.drivers.test_pure
+/opt/stack/cinder/.tox/py312/lib/python3.12/site-packages/os_win/_utils.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/opt/stack/cinder/.tox/py312/lib/python3.12/site-packages/os_win/_utils.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/opt/stack/cinder/.tox/py312/lib/python3.12/site-packages/os_win/_utils.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/opt/stack/cinder/.tox/py312/lib/python3.12/site-packages/os_win/_utils.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/opt/stack/cinder/.tox/py312/lib/python3.12/site-packages/os_win/_utils.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/opt/stack/cinder/.tox/py312/lib/python3.12/site-packages/os_win/_utils.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_cleanup_ghostpod [0.864083s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseSharedDriverTestCase.test_for_user_agent [0.913463s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_cloned_volume_and_extend [0.067294s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_volume_from_snapshot_sync [0.447931s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_delete_volume_already_deleted [0.051613s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test__get_volume_type_extra_spec [1.252000s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_disable_async_replication_if_needed [0.065163s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_check_repl [0.047586s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_consistencygroup_in_pod [0.469287s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_disable_replication_error_propagates [0.085823s] ... ok
+/opt/stack/cinder/.tox/py312/lib/python3.12/site-packages/os_win/_utils.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_cloned_volume [0.060035s] ... ok
+/opt/stack/cinder/.tox/py312/lib/python3.12/site-packages/os_win/_utils.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_volume_from_snapshot [0.066090s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_disable_sync_replication [0.087147s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_cloned_volume_qos_2 [0.063452s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_volume_replicated_async [0.057953s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_consistencygroup [0.053439s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_delete_cgsnapshot_1 [0.057595s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_does_pgroup_exist_not_exists [0.092140s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_volume [0.056368s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_delete_connected_pod_volume [0.065135s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_volume_with_qos_2 [0.066188s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_failover_async [0.100949s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_enable_async_replication_if_needed_success [0.056015s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_find_async_failover_target [0.047849s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_volume_with_qos_3 [0.072400s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_failover_sync [0.091696s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_delete_volume [0.051181s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_find_sync_failover_target_success [0.058931s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_pgroup_name_04 [0.050461s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_delete_volume_eradicate_now [0.055217s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_pgroup_name_11 [0.084822s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_find_async_failover_target_no_pgsnap [0.056510s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_pgroups [0.056772s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_snapshot_error_propagates [0.053189s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_pgroup_name_01 [0.053667s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_pgroup_snap_name_from_snapshot [0.104609s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_pgroup_name_08 [0.052632s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_snapshot_get_size_empty_ref [0.051214s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_pgroup_snap_suffix [0.079984s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_snapshot_get_size_volume_ref_not_exist [0.056305s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_qos_settings_from_specs_id [0.075331s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_snapshot_none_ref [0.052068s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_qos_settings_set_one [0.072122s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverGetCurrentArrayTestCase.test_get_current_array [1.525715s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_safemode_check [0.049027s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_replication_type_from_vol_type_7 [0.096959s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_replication_type_from_vol_type_1 [0.080463s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_cloned_volume_qos_3 [0.070622s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_unmanage_snapshot_2 [0.051877s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_consistencygroup_from_cg [0.057448s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_async_failover_error_propagates [1.622923s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_get_size_bad_ref [0.077040s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_get_size_error_propagates [0.116334s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_unmanage_with_deleted_volume_error [0.080106s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_snapshot [0.054424s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_snapshot_bad_ref [0.077770s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_volume_from_cgsnapshot [0.058387s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_update_consistencygroup_no_remove_vols [0.099684s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_snapshot_get_size_none_ref [0.102853s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_cloned_volume_qos_1 [0.151341s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_volume_from_snapshot_with_extend [0.056749s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_parse_replication_configs_multiple_async_target [0.088265s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_delete_cgsnapshot_2 [0.052337s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_update_consistencygroup_no_vols [0.094338s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_from_snap_in_vgroup [0.083346s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_terminate_connection_no_connector_no_host [0.095726s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_with_qos [0.144003s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_delete_vgroup_if_empty [0.092906s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureDriverTestCase.test_for_user_agent [0.076631s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureFCDriverTestCase.test_get_host [0.044609s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_unmanage_with_deleted_volume [0.081077s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_volume_from_snapshot_with_qos [0.117980s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_parse_replication_configs_single_sync_target_uniform [0.102210s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_connect_already_connected [0.050805s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_do_setup_replicated_sync_rep [0.098763s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_update_provider_info_update_all [0.084183s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_volume_replicated_sync [0.091286s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_connect_already_connected_list_hosts_empty [0.089928s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_update_provider_info_update_some [0.050296s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_revert_to_snapshot_group [0.115371s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_enable_async_replication_if_needed_error_propagates [0.084685s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureFCDriverTestCase.test_initialize_connection [0.054029s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_delete_connected_volume [0.102419s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_connect_create_host_already_exists [0.068142s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_terminate_connection_no_connector_with_host [0.079475s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_extend_volume [0.085145s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_get_target_iscsi_ports_with_no_ports [0.050817s] ... ok
+/opt/stack/cinder/.tox/py312/lib/python3.12/site-packages/os_win/_utils.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+{5} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_connect_create_host_already_exists [0.050098s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_initialize_connection_uniform_ac_cidr [0.051337s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_terminate_connection_uniform_ac_remove_remote_hosts [0.084035s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_delete_snapshot_eradicate_now [0.108823s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_get_nguid [0.046695s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_find_async_failover_target_error_propagates_no_secondary [0.093550s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_connect [0.084781s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_get_target_nvme_ports [0.082974s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_unmanage [0.077549s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_find_sync_failover_target_fail_to_get_pod [0.096328s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_delete_volume_error [0.108797s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureVolumeGroupsTestCase.test_create_group_from_src_with_cg [0.076027s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_connect_nqn_already_in_use [0.088222s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_update_provider_info_no_updates [0.077642s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_manageable_snapshots [0.083355s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_disable_replication_success [0.100057s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_for_user_agent [0.077560s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureFCDriverTestCase.test_connect_already_connected_list_hosts_empty [0.086223s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureVolumeGroupsTestCase.test_create_group_with_cg [0.081210s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_manageable_volumes [0.080914s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_does_pgroup_exist_exists [0.095217s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_get_target_nvme_ports_with_only_fc_ports [0.076957s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureVolumeGroupsTestCase.test_delete_group_snapshot_with_cg [0.075793s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureFCDriverTestCase.test_connect_already_connected_list_hosts_exception [0.084926s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_manageable_volumes_already_managed [0.089162s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureVolumeGroupsTestCase.test_for_user_agent [0.077893s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureFCDriverTestCase.test_for_user_agent [0.077585s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_initialize_connection_multipath [0.093803s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_enable_sync_replication_sync [0.107270s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_manageable_volumes_no_pure_volumes [0.080891s] ... ok
+{1} cinder.tests.unit.volume.drivers.test_pure.PureVolumeUpdateStatsTestCase.test_get_replication_capability_2 [0.070031s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureVolumeGroupsTestCase.test_update_group_with_cg [0.082915s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_connect_host_deleted [0.097790s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureVolumeUpdateStatsTestCase.test_get_thin_provisioning_2 [0.047432s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_find_sync_failover_target_no_ac_arrays [0.107295s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_pgroup_name_10 [0.082617s] ... ok
+{5} cinder.tests.unit.volume.drivers.test_pure.PureVolumeUpdateStatsTestCase.test_get_volume_stats [0.054823s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_get_chap_credentials_create_new_fail_to_set [0.081173s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_pgroup_snap_name [0.088004s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_flasharray_verify_https [0.106313s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverGetCurrentArrayTestCase.test_for_user_agent [1.402632s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_get_host [0.080298s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_replication_type_from_vol_type_4 [0.076723s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_manageable_volumes_no_hosts [0.099207s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_cloned_volume_with_cgroup [0.075430s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_get_target_iscsi_ports_with_only_fc_ports [0.086047s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_replication_type_from_vol_type_5 [0.081588s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_in_vgroup [0.057400s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_cloned_volume_sync_rep [1.438364s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_pgroup_name_02 [0.107101s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_connect_already_connected_list_hosts_empty [0.085967s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_delete_cgsnapshot_eradicate_now [0.045852s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_snapshot_ref_not_exist [0.082229s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_consistencygroup_from_cgsnapshot [0.054562s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_delete_consistencygroup [0.066413s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_volume_group_if_not_exist [0.053947s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_replication_08 [0.073564s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_initialize_connection_uniform_ac_cidr [0.090748s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_pgroup_name_03 [0.103510s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_delete_snapshot_error [0.049477s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_replication_10 [0.053186s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_initialize_connection_uniform_ac_cidrs [0.076480s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_volume_with_qos_1 [0.090946s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_disable_replication_already_disabled [0.059642s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_replication_11 [0.057889s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureVolumeGroupsTestCase.test_add_to_group_if_needed_with_cg [0.046451s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_pgroup_name_05 [0.119337s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_disable_sync_replication_if_needed [0.060548s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_replication_12 [0.055802s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureVolumeUpdateStatsTestCase.test_get_replication_capability_5 [0.042966s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_delete_snapshot [0.093821s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_do_setup_replicated [0.053108s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_pgroup_name_06 [0.086992s] ... ok
+{6} cinder.tests.unit.volume.drivers.test_pure.PureVolumeUpdateStatsTestCase.test_get_replication_capability_6 [0.047711s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_replication_13 [0.062509s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_does_pgroup_exist_error_propagates [0.053115s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_enable_async_replication_if_needed_not_repl_type [0.078370s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_volume_type_extra_spec [0.089472s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_enable_async_replication_if_needed_sync_skip [0.052120s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_replication_14 [0.093479s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_enable_sync_replication [0.090438s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_enable_sync_replication_if_needed [0.058382s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing [0.088083s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_unmanage_error_propagates [0.091597s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_find_async_failover_target_missing_pgsnap [0.051360s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_find_async_failover_target_no_repl_targets [0.082180s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_find_sync_failover_target_pod_status_error [0.052276s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_error_propagates [0.097033s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_unmanage_snapshot_1 [0.094761s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_qos_settings_from_extra_specs [0.077368s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_for_user_agent [0.052718s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_with_connected_hosts [0.087104s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_manageable_snapshots_no_pure_snapshots [0.052307s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_qos_settings_set_zeros [0.079214s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_wait_for_stretch [0.085980s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_manageable_volumes_connected_vol [0.049329s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_replication_05 [0.090053s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_replication_type_from_vol_type_2 [0.076176s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_replication_type_from_vol_type_3 [0.053581s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureFCDriverTestCase.test_connect [0.103397s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_snapshot_get_size [0.048862s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_replication_type_from_vol_type_6 [0.091838s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_replication_07 [0.097156s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureFCDriverTestCase.test_get_host_uppercase_wwpn [0.104764s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_snapshot_multiple_snaps_on_volume [0.101269s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_replication_type_from_vol_type_8 [0.081216s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_replication_09 [0.081733s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_qos_reset_iops [0.051309s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_initialize_connection_ipv6 [0.099213s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_snapshot_empty_ref [0.081032s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_terminate_connection_uniform_ac_no_remote_hosts [0.079934s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_replication_01 [0.047698s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_replication_03 [0.046731s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureVolumeGroupsTestCase.test_add_to_group_if_needed [0.090061s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_snapshot_get_size_bad_ref [0.087237s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureFCDriverTestCase.test_initialize_connection_uniform_ac [0.094980s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_replication_06 [0.050510s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_replication_15 [0.046637s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureVolumeUpdateStatsTestCase.test_for_user_agent [0.087092s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_snapshot_volume_ref_not_exist [0.078323s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_connect [0.093272s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_terminate_connection_host_got_new_connections [0.068266s] ... ok
+{7} cinder.tests.unit.volume.drivers.test_pure.PureVolumeUpdateStatsTestCase.test_get_replication_capability_3 [0.084059s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_for_user_agent [0.062567s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_parse_replication_configs_single_sync_target_non_uniform [0.085898s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_unmanage_snapshot_error_propagates [0.079720s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_get_target_iscsi_ports [0.047814s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_revert_to_snapshot [0.083487s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_get_target_iscsi_ports_with_iscsi_and_fc [0.046374s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_unmanage_snapshot_with_deleted_snapshot [0.055731s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_wait_until_source_array_allowed_not_ready [0.070991s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_initialize_connection_ipv6 [0.061229s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureFCDriverTestCase.test_connect_wwn_already_in_use [0.054932s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureVolumeGroupsTestCase.test_create_group [0.049168s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_connect_iqn_already_in_use [0.061018s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_connect_already_connected_list_hosts_exception [0.086882s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureVolumeUpdateStatsTestCase.test_get_replication_capability_4 [0.045330s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_get_host [0.064530s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureVolumeUpdateStatsTestCase.test_get_replication_capability_7 [0.051705s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_initialize_connection_multipath [0.080687s] ... ok
+{4} cinder.tests.unit.volume.drivers.test_pure.PureVolumeUpdateStatsTestCase.test_get_thin_provisioning_3 [0.047655s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureVolumeGroupsTestCase.test_create_group_snapshot_with_cg [0.060518s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_initialize_connection_uniform_ac [0.089914s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureVolumeGroupsTestCase.test_delete_group [0.056138s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_cgsnapshot [1.682671s] ... ok
+{2} cinder.tests.unit.volume.drivers.test_pure.PureVolumeGroupsTestCase.test_delete_group_with_cg [0.057538s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_initialize_connection_uniform_ac_cidrs [0.080865s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_delete_not_connected_pod_volume [0.057794s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_generate_purity_host_name [0.051290s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_initialize_connection_with_auth [0.098938s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_manageable_snapshots_already_managed [0.061576s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_connect_already_connected_list_hosts_exception [0.078049s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_pgroup_name_07 [0.079578s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_get_target_nvme_ports_with_no_ports [0.076778s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_pgroup_name_09 [0.078054s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_initialize_connection [0.093967s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_qos_settings_invalid [0.076719s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureVolumeGroupsTestCase.test_update_group [0.073794s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_get_wwn [0.072785s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureVolumeUpdateStatsTestCase.test_get_replication_capability_1 [0.075722s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_bad_ref [0.081235s] ... ok
+{0} cinder.tests.unit.volume.drivers.test_pure.PureVolumeUpdateStatsTestCase.test_get_thin_provisioning_1 [0.076114s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_get_size [0.076911s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_snapshot [0.065464s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_manage_existing_snapshot_get_size_error_propagates [0.049474s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_parse_replication_configs_single_async_target [0.053445s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_qos [0.077497s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_replication_02 [0.052309s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_retype_replication_04 [0.050689s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_stretch_replica [0.085126s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_sync_retype_enable [0.070605s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_terminate_connection [0.055988s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_terminate_connection_host_deleted [0.048657s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_update_consistencygroup [0.061220s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_update_consistencygroup_no_add_vols [0.060466s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_wait_until_source_array_allowed_ready [0.044209s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_wait_until_target_group_setting_propagates_not_ready [0.044629s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_wait_until_target_group_setting_propagates_ready [0.043694s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureFCDriverTestCase.test_connect_already_connected [0.051584s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureFCDriverTestCase.test_terminate_connection_uniform_ac [0.045946s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_get_chap_credentials_create_new [0.047357s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureISCSIDriverTestCase.test_initialize_connection [0.050551s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_connect_already_connected [0.049133s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureNVMEDriverTestCase.test_initialize_connection_uniform_ac [0.054719s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureVolumeGroupsTestCase.test_create_group_from_src [0.047849s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureVolumeGroupsTestCase.test_create_group_snapshot [0.044363s] ... ok
+{3} cinder.tests.unit.volume.drivers.test_pure.PureVolumeGroupsTestCase.test_delete_group_snapshot [0.045457s] ... ok
+
+======
+Totals
+======
+Ran: 274 tests in 7.6522 sec.
+ - Passed: 274
+ - Skipped: 0
+ - Expected Fail: 0
+ - Unexpected Success: 0
+ - Failed: 0
+Sum of execute time for each test: 30.9109 sec.
+
+==============
+Worker Balance
+==============
+ - Worker 0 (30 tests) => 0:00:03.831105
+ - Worker 1 (30 tests) => 0:00:03.551551
+ - Worker 2 (34 tests) => 0:00:03.352742
+ - Worker 3 (34 tests) => 0:00:03.658944
+ - Worker 4 (36 tests) => 0:00:04.786479
+ - Worker 5 (36 tests) => 0:00:03.605098
+ - Worker 6 (37 tests) => 0:00:04.047090
+ - Worker 7 (37 tests) => 0:00:04.464899
+py312: commands[1]> stestr slowest
+Test id                                                                                                        Runtime (s)
+-------------------------------------------------------------------------------------------------------------  -----------
+cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_cgsnapshot                 1.683
+cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_async_failover_error_propagates   1.623
+cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverGetCurrentArrayTestCase.test_get_current_array  1.526
+cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_cloned_volume_sync_rep     1.438
+cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverGetCurrentArrayTestCase.test_for_user_agent     1.403
+cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test__get_volume_type_extra_spec       1.252
+cinder.tests.unit.volume.drivers.test_pure.PureBaseSharedDriverTestCase.test_for_user_agent                    0.913
+cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_cleanup_ghostpod                  0.864
+cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_consistencygroup_in_pod    0.469
+cinder.tests.unit.volume.drivers.test_pure.PureBaseVolumeDriverTestCase.test_create_volume_from_snapshot_sync  0.448
+.pkg: _exit> python /opt/stack/cinder/.tox/.tox/lib/python3.12/site-packages/pyproject_api/_backend.py True pbr.build
+  py312: OK (85.75=setup[7.67]+cmd[76.57,1.51] seconds)
+  congratulations :) (86.38 seconds)
